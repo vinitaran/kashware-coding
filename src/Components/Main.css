@@ -1,0 +1,324 @@
+/* .main{
+    display: flex;
+    align-items: center;
+}
+
+.main > p , .content > p{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    position: absolute;
+    top: 809px;
+    left: 532px;
+    width: 857px;
+    height: 38px;
+    text-align: left;
+    font: normal normal 600 30px/36px SFpro ;
+    letter-spacing: 0px;
+    color: #AAA6A1;
+    opacity: 1;
+}
+
+.downArrow{
+    position: absolute;
+    top: 943px;
+    left: 928px;
+    width: 57px;
+    height: 62px;
+    background: transparent url('../images/downArrow.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+} */
+
+  /*Start of Main */
+
+  #hero {
+    /* background: url("/images/hero.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover; */
+    min-height: 1506px;
+    margin: 0 auto;
+    width: 100vw;
+    font-family: "SF Pro", sans-serif;
+    position: relative;
+    background: none;
+    background: #1E1E1E;
+  }
+  
+  #hero .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-left: 4px solid #D9C892;
+    border-right: 4px solid #D9C892;
+    /* animation: hero-bg 5s linear forwards; */
+    /* This where I have changed */
+  }
+  
+  /* #hero.animation .hero-bg {
+    animation: hero-bg 5s linear forwards;
+  } */
+  
+  @keyframes hero-bg {
+    0% {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+  
+    25% {
+      opacity: 0.9;
+    }
+  
+    50% {
+      opacity: 0.6;
+    }
+  
+    75% {
+      width: 757px;
+      opacity: 0.3;
+    }
+  
+    80% {
+      width: 757px;
+      opacity: 0;
+    }
+  
+    100% {
+      width: 757px;
+      opacity: 0;
+    }
+  }
+  
+  #hero .container-wrap {
+    min-height: 100vh;
+    margin: auto;
+    /* margin-left: 9%; */
+    padding: 0px 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1500px;
+    width: 100%;
+    transform: scale(0.8);
+    /* animation: hero-container 5s linear forwards; */
+  }
+  
+  /* #hero.animation .container-wrap {
+    animation: hero-container 5s linear forwards;
+  } */
+  
+  @keyframes hero-container {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  
+    25% {
+      transform: scale(0.8);
+      opacity: 0.9;
+    }
+  
+    50% {
+      transform: scale(0.6);
+      opacity: 0.6;
+    }
+  
+    75% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+  }
+  
+  .hero__title {
+    font-size: 70px;
+    color: #E5DFD8;
+    font-weight: 700;
+  }
+  
+  .hero__hashtags {
+    margin-top: 100px;
+    font-size: 25px;
+    color: #AAA6A1;
+    font-weight: 600;
+  }
+  
+  .hero__btn {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .hero__btn img {
+    height: 45px;
+  }
+  
+ 
+  
+  /* #hero.animation .card {
+    animation: card-2 5s linear 3.85s, card-fan 0s forwards 8.85s;
+  } */
+  
+  @keyframes card-1 {
+    0% {
+      height: 100%;
+      width: 757px;
+      opacity: 0;
+      z-index:1;
+    }
+  
+    20% {
+      height: 100%;
+      width: 757px;
+      opacity: 0;
+    }
+  
+    40% {
+      width: 649px;
+      height: 1028px;
+      opacity: 0.25;
+  
+    }
+  
+    60% {
+      width: 555px;
+      height: 880px;
+      opacity: 0.50;
+    }
+  
+    80% {
+      width: 487px;
+      height: 772px;
+      opacity: 0.75;
+    }
+  
+    100% {
+      width: 423px;
+      height: 671px;
+      opacity: 1;
+      
+    }
+  }
+  
+  @keyframes card-2 {
+    0% {
+      height: 100%;
+      width: 757px;
+      opacity: 0;
+      z-index:1;
+    }
+  
+    25% {
+      width: 649px;
+      height: 1028px;
+      opacity: 0.25;
+  
+    }
+  
+    50% {
+      width: 555px;
+      height: 880px;
+      opacity: 0.50;
+    }
+  
+    75% {
+      width: 487px;
+      height: 772px;
+      opacity: 0.75;
+    }
+  
+    100% {
+      width: 423px;
+      height: 671px;
+      opacity: 1;
+      z-index:1;
+    }
+  }
+  
+  @keyframes card-fan {
+    to {
+      background: url(../images/kard-fan.png) no-repeat center center/cover;
+      width: 813px;
+      height: 672px;
+      opacity: 1;
+      z-index:1;
+    }
+  }
+  
+  /* End of Main */
+
+.card {
+    position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 423px;
+    height: 671px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/kashware-kard.png) no-repeat center center/cover;
+  
+    opacity: 0;
+    z-index: -1;
+    /* animation: card-2 5s linear both 3.85s; */
+    /* animation: card-2 5s linear 3.85s, card-fan 0s forwards 8.85s; */
+    /* This is where I have changed */
+  
+  }
+
+  .container-wrap > img{
+      position: absolute;
+      bottom: 50px;
+      cursor: pointer;
+  }
+
+  .cards h1{
+      color: white;
+      position: absolute;
+      bottom: 20px;
+      opacity: 0;
+      /* animation: cardContent 0s forwards 8.85s; */
+      font-family: "SF Pro",sans-serif;
+      font-weight: 700;
+      font-size: 70px;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 1px solid red; */
+    height: 1000px;
+    width: 100vw;
+  }
+
+  @keyframes cardContent {
+    to {
+        text-align: center;
+        width: 813px;
+        z-index:1;
+        width: 714px;
+        letter-spacing: 0px;
+        color: #E5DFD8;
+        opacity: 1;
+        
+      }
+  }

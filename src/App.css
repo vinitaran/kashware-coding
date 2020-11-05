@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'SFpro';
+  src: url('./font/FontsFree-Net-SFProText-Regular.ttf');
+}
+
+/* .App{
+  top: -161.99998474121094px;
+  left: -88px;
+  width: 2044px;
+  height: 1506px;
+  background: transparent url('images/hero.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+} */
+
+.App{
+  height: 150vh;
+  width: 100%;
+  min-width: 600px;
+}
